@@ -17,12 +17,27 @@ html(lang='en')
             h3 New Player
             input#username(type="text", placeholder="Name")
             input#avatar(type="text", placeholder="Avatar URL")
-            button#add.pure-button.pure-button-primary Sign in
+            button#add.pure-button.pure-button-primary Add
+
+    .pure-g
+      .pure-u-1
+        form.pure-form
+          fieldset
+            h3 Scoring
+            input#score(type="text", placeholder="Score")
+            button#add-score.pure-button.pure-button-primary Add Score
 
 
     .pure-g
       .pure-u-1
-        table.pure-table.pure-table-striped
+        img.arrow#up(src='./media/red_up_arrow.png')
+        img.arrow#down(src='./media/red_down_arrow.png')
+        img.arrow#left(src='./media/red_left_arrow.png')
+        img.arrow#right(src='./media/red_right_arrow.png')
+
+    .pure-g
+      .pure-u-1
+        table#game.pure-table
           thead
             tr
               th Avatar
