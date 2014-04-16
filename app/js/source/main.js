@@ -4,7 +4,7 @@
   $(document).ready(init);
 
   var currUser = 0;
-  var currRoll = 2;
+  var currRoll = 3;
 
   function init() {
     $('#add').click(add);
@@ -15,8 +15,7 @@
 
   function score(event) {
     var newscore = $('#score').val();
-    newscore++;
-    debugger;
+    $('.horizontal > .vertical').text(newscore);
 
     event.preventDefault();
   }
