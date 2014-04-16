@@ -11,7 +11,7 @@ html(lang='en')
     h1 Yahtzee
 
     .pure-g
-      .pure-u-1-3
+      .pure-u-1-2
         form.pure-form
           fieldset
             h3 New Player
@@ -19,21 +19,28 @@ html(lang='en')
             input#avatar(type="text", placeholder="Avatar URL")
             button#add.pure-button.pure-button-primary Add
 
+
     .pure-g
       .pure-u-1-3
-        form.pure-form
-          fieldset
-            h3 Scoring
-            input#score(type="text", placeholder="Score")
-            button#add-score.pure-button.pure-button-primary Add Score
-
-
-    .pure-g
-      .pure-u-1
         img.arrow#up(src='./media/red_up_arrow.png')
         img.arrow#down(src='./media/red_down_arrow.png')
         img.arrow#left(src='./media/red_left_arrow.png')
         img.arrow#right(src='./media/red_right_arrow.png')
+      .pure-u-1-3
+        form.pure-form
+          fieldset
+            input#score(type="text", placeholder="Score")
+            button#add-score.pure-button.pure-button-primary Add Score
+
+    .pure-g
+      .pure-u-1-3.dicearea
+        img.dice(src='./media/dice-1-th.png')
+        img.dice(src='./media/dice-2-th.png')
+        img.dice(src='./media/dice-3-th.png')
+        img.dice(src='./media/dice-4-th.png')
+        img.dice(src='./media/dice-5-th.png')
+      .pure-u-1-2
+        button.pure-button.button-success#roll Roll
 
     .pure-g
       .pure-u-1

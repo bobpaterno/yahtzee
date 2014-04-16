@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lemon);
 
 body {
   background-image: url('../media/dice.jpg');
@@ -7,13 +8,38 @@ body {
   margin-left: 5px;
 }
 
+h1, h3, .arrow {
+  margin-left: 5px;
+  font-family: 'Lemon', cursive;
+  color: #7a1b1b;
+}
+
 input {
   margin: 5px;
+  background-color: rgba(242, 227, 227, 0.9);
 }
 
 .arrow {
   width: 50px;
   margin-left: 10px;
+  background-color: rgba(117, 71, 71, 0.89);
+  box-shadow: 5px 5px 5px #634545;
+}
+
+.arrow:hover {
+  background-color: rgba(150,60,60,.8);
+  box-shadow: 7px 7px 3px #453030;
+}
+
+.dice {
+  width: 60px;
+  margin: 7px;
+  opacity: 1;
+}
+
+.frozen {
+  width: 60px;
+  opacity: 0.7;
 }
 
 .horizontal {
@@ -39,7 +65,9 @@ html, button, input, select, textarea,
 }
 
 .button-success {
-  background: rgb(82, 227, 101);
+  background: rgb(135, 171, 64);
+  height: 65px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .button-error {
@@ -70,7 +98,18 @@ html, button, input, select, textarea,
   font-size: 150%;
 }
 
+.pure-button-primary {
+    background-color: rgba(174, 25, 25, 0.84);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 .avatar {
   width: 30px;
   height: 30px;
+}
+
+.dicearea {
+  background-color: rgba(255,255,255,.3);
+  padding: 10px;
+  margin: 5px;
 }
